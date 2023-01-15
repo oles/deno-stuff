@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'SF Pro Rounded';
+    src: url('./SF-Pro-Rounded-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro Rounded';
+    font-weight: 700;
+    src: url('./SF-Pro-Rounded-Bold.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    font-size: 23px;
+    line-height: 30px;
+    font-family: 'SF Pro Rounded', sans;
+
+    height: 100vh;
+    height: 100dvh;
+
+    background: black;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+}
+
+footer time {
+    font-size: 60px;
+}
+
+article {
+    margin-bottom: 80px;
+
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+article.past {
+    opacity: 0.7;
+}
+
+article .date {
+    margin-top: 32px;
+}
+
+article section {
+    border-top: 2px solid #555555;
+    padding-top: 30px;
+}
+
+article h1 {
+    margin: 0 0 6px;
+}
+
+article address {
+    font-style: normal;
+}
